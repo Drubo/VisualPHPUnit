@@ -174,7 +174,7 @@ class Home extends \app\core\Controller {
 
     function _require_optional_bootstrap($bootstrap) {
       $allowed_bootstraps = \app\lib\Library::retrieve('optional_bootstraps');
-      if (in_array($bootstrap, $allowed_bootstraps)) {
+      if (in_array($bootstrap, array_keys($allowed_bootstraps))) {
         require($allowed_bootstraps[$bootstrap]['file']);
       }
     }
