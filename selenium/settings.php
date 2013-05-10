@@ -5,9 +5,8 @@ set_include_path(get_include_path() . PATH_SEPARATOR . $root );
 class driver_settings {
 	var $target_browser = 'firefox';
 	var $webdriver_host = 'localhost';
-	//var $webdriver_host = '155.98.92.180';
 	var $webdriver_port = '4444';
-	var $application_url_base = 'http://coraldev.eng.utah.edu/lab/staff/';
+	var $application_url_base = 'http://coraldev.eng.utah.edu/lab/members/';
 	var $post_url = '/wd/hub';
 }
 
