@@ -57,7 +57,6 @@ class phpunit_tests extends CI_Controller
   function _load_requirements() {
     $this->_load_phpunit();
     $this->_load_vpu();
-    $this->load->database('coral_eq');
   }
 
   function _load_phpunit() {
